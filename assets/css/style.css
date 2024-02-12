@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal&display=swap');
+
+
+body{
+    font-family: 'Metal', serif;
+}
+
+
+:root {
+    --color-dark: #000;
+    --color-white: #fff;
+    --color-red : #ff0000;
+}
+
+.movieCard {
+    height: 100vh;
+    cursor: pointer;
+    position: relative;
+}
+
+.movieCard img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+.movieCard figcaption {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding-left: 65px;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .6) 90%, transparent);
+    color: var(--color-white);
+}
+
+.mainSlider .owl-prev,
+.mainSlider .owl-next {
+    position: absolute;
+    top: 40%;
+    color: red !important;
+    background-color: transparent !important;
+    transition: all .3s ease-in-out;
+}
+
+.mainSlider .owl-prev:hover,
+.mainSlider .owl-prev:active,
+.mainSlider .owl-next:active,
+.mainSlider .owl-next:hover{
+    /* font-weight: bold; */
+    transform: scale(1.5);
+}
+
+
+.mainSlider .owl-nav {
+    font-size: 5rem;
+}
+
+.mainSlider .owl-prev {
+    left: 10px;
+}
+
+.mainSlider .owl-next {
+    right: 10px;
+}
+
+.mainSlider .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    left: 0;
+    width: 100%;
+}
+
+.movieCard .hover:hover,
+.movieCard .hover:active,
+.movieCard .hover:focus{
+    background-color: #ed0101;
+}
